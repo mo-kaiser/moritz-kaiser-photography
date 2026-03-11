@@ -1,0 +1,61 @@
+---
+/**
+ * * Hero with background image
+ * You'll want a mobile image, and a desktop image for this.
+ */
+
+import Button from "@components/Button/Button.astro";
+import heroImage from "@images/hero-bg-min.jpg";
+import heroImageMobile from "@images/hero-bg-min.jpg";
+import { Image } from "astro:assets";
+---
+
+<section id="hero" class="relative z-10 flex min-h-[100lvh] w-full">
+	<!-- background image -->
+	<div class="absolute -z-10 h-full min-h-full w-full overflow-hidden">
+		<div class="absolute inset-0 bg-black/10"></div>
+
+		<Image
+			src={heroImage}
+			class="hidden h-auto min-h-full w-full object-cover object-bottom sm:block"
+			alt="Moritz Kaiser Photography"
+			aria-hidden="true"
+			loading="eager"
+			height={1400}
+		/>
+		<Image
+			src={heroImageMobile}
+			class="h-auto min-h-full w-full object-cover sm:hidden"
+			alt="Moritz Kaiser Photography"
+			aria-hidden="true"
+			loading="eager"
+			width={1200}
+		/>
+	</div>
+
+	<!-- hero items -->
+	<div class="site-container relative w-full gap-10 py-44 text-center md:py-52 md:text-left">
+		<!-- Hero text -->
+		<div class="text-base-50 my-auto mx-auto max-w-[800px] flex-col text-center">
+			<h1
+				class="font-heading-1 text-4xl font-semibold text-pretty drop-shadow-[0_2px_2px_rgba(0,0,0,0.4)] md:text-7xl md:leading-tight"
+			>
+				Moritz Kaiser
+			</h1>
+			<p
+				class="mt-8 text-lg tracking-widest text-pretty drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)] md:max-w-[550px] md:text-2xl mx-auto"
+			>
+				Travel, Street, Portrait & Wedding Photography, Baden-Baden, Germany
+			</p>
+			<div class="mt-10 flex flex-wrap justify-center gap-4">
+				<Button
+					variant="ghost"
+					href="/#portfolio"
+					class="pl-0 text-xl text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.2)] md:text-3xl"
+				>
+					Scroll Down For More
+				</Button>
+			</div>
+		</div>
+	</div>
+</section>
