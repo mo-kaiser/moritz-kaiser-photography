@@ -8,7 +8,7 @@ import icon from "astro-icon"; // https://www.astroicon.dev/guides/upgrade/v1/
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://horizon.cosmicthemes.com",
+	site: "https://splendid-muffin-c0321e.netlify.app",
 	integrations: [
 		// example auto import component into blog post mdx files
 		AutoImport({
@@ -39,7 +39,7 @@ export default defineConfig({
 		}),
 		sitemap(),
 		compress({
-			HTML: true,
+			HTML: false,
 			JavaScript: true,
 			CSS: false,
 			Image: false, // astro:assets handles this. Enabling this can dramatically increase build times
