@@ -13,12 +13,14 @@ const width = maxWidth / numCols;
 ---
 
 <div class="h-full w-full max-w-6xl">
-	<Image
-		src={image}
-		alt="portfolio image"
-		width={width}
-		quality="high"
-		densities={[1.5, 2]}
-		class="h-auto min-h-full w-full min-w-full object-cover"
-	/>
+	<a href={image.src} class="glightbox" data-gallery="portfolio">
+		<Image
+			src={image}
+			alt="portfolio image"
+			width={width}
+			quality="high"
+			densities={[1.5, 2]}
+			class="h-auto min-h-full w-full min-w-full object-cover transition hover:opacity-90"
+		/>
+	</a>
 </div>

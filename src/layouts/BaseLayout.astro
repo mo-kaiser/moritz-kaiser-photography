@@ -45,5 +45,25 @@ const {
 			</main>
 		</div>
 		<Footer />
+				<!-- GLightbox -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+		<script>
+			import GLightbox from 'glightbox';
+			
+			function initLightbox() {
+				GLightbox({
+					selector: '.glightbox',
+					touchNavigation: true,
+					loop: true,
+					autoplayVideos: false,
+				});
+			}
+
+			// runs on initial page load
+			initLightbox();
+
+			// runs on view transitions navigation
+			document.addEventListener('astro:after-swap', initLightbox);
+		</script>
 	</body>
 </html>

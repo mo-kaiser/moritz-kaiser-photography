@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import silverAndBold from "@assets/images/SilverAndBold_01.png";
+import paperTrade from "@assets/images/projectpapertrade.png";
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Projects – Moritz Kaiser" description="Other projects by Moritz Kaiser">
+    <article class="mx-auto mt-12 px-4 pt-16 md:mt-20 md:max-w-6xl md:pt-24">
+        <h1 class="h1 mt-4 text-center normal-case">Projects</h1>
+        <p class="description mt-4 text-center text-lg">
+            Besides photography, I work on a few other things.
+        </p>
+
+        <!-- Silver and Bold -->
+        <div class="mt-20 flex flex-col gap-12 md:flex-row md:items-center">
+            <div class="md:w-1/2">
+                <a href="https://silverandbold.com" target="_blank" rel="noopener noreferrer">
+                    <Image
+                        src={silverAndBold}
+                        alt="Silver and Bold"
+                        width={900}
+                        class="w-full transition hover:opacity-80"
+                    />
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="h3 normal-case">Silver & Bold</h2>
+                <p class="mt-6 text-lg">
+                    A German-language personal finance blog covering investing, 
+                    financial independence and building wealth over time.
+                </p>
+                <a 
+                    href="https://silverandbold.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="text-primary-500 hover:text-primary-700 mt-6 inline-block transition"
+                >
+                    silverandbold.com →
+                </a>
+            </div>
+        </div>
+
+        <!-- Project Papertrade -->
+        <div class="mt-24 flex flex-col gap-12 md:flex-row-reverse md:items-center">
+            <div class="md:w-1/2">
+                <a href="https://projectpapertrade.com" target="_blank" rel="noopener noreferrer">
+                    <Image
+                        src={paperTrade}
+                        alt="Project Papertrade"
+                        width={900}
+                        class="w-full transition hover:opacity-80"
+                    />
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="h3 normal-case">Project Papertrade</h2>
+                <p class="mt-6 text-lg">
+                    A web app for tracking and analysing paper trades from 
+                    TradingView – built for traders who want to review their 
+                    performance without risking real money.
+                </p>
+                <a 
+                    href="https://projectpapertrade.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="text-primary-500 hover:text-primary-700 mt-6 inline-block transition"
+                >
+                    projectpapertrade.com →
+                </a>
+            </div>
+        </div>
+
+    </article>
+</BaseLayout>

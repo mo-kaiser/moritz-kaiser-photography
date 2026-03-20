@@ -46,5 +46,9 @@ const navConfig: navItem[] = [
                 text: "Contact",
                 link: "/#contact",
         },
+        {
+                text: "Projects",
+                link: "/projects",
+        },
 ];
 export default navConfig;
