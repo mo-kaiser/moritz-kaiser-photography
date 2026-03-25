@@ -1,7 +1,7 @@
 ---
 title: Wedding
 description: Weddings are unique moments. It is my privilege to capture these memories.
-heroImage: ./wedding_005.jpg
+heroImage: ./wedding_hero.jpg
 date: "2024"
 location: By appointment
 clients: []
