@@ -1,12 +1,15 @@
 ---
 title: Street
 description: No staging, no direction. Just everyday life as it happens – and the luck of having a camera on you.
-heroImage: ./street_007.jpg
+heroImage: ./street_hero.jpg
 date: "2024"
 location: Urban & Candid
 clients: []
 images:
   [
+    [./street_007.jpg],
+    [./street_neu_003.jpg, ./street_neu_006.jpg],
+    [./travel_neu_005_sw.jpg],
     [./street_002_sw.jpg],
     [./street_001_sw.jpg, ./street_004_sw.jpg],
     [./street_05_sw.jpg],
