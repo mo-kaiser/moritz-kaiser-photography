@@ -1,7 +1,7 @@
 ---
 title: Portraits
 description: Finding the moment when someone is just themselves – camera, lights and all.
-heroImage: ./portrait_016_4.jpg
+heroImage: ./portrait_hero.jpg
 date: "2024"
 location: Film & Digital
 clients: []

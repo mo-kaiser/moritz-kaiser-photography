@@ -1,12 +1,15 @@
 ---
 title: Travel
 description: Travelling with a camera – light, landscapes and the odd moment worth keeping.
-heroImage: ./travel_005.jpg
+heroImage: ./travel_hero.jpg
 date: "2024"
 location: Worldwide
 clients: []
 images:
   [
+    [./travel_005.jpg],
+    [./travel_neu_001.jpg, ./travel_neu_002.jpg],
+    [./travel_neu_004.jpg],
     [./travel_007.jpg], 
     [./travel_006.jpg],
     [./travel_008.jpg, ./travel_009.jpg],
