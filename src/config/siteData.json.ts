@@ -17,9 +17,9 @@ export interface SiteDataProps {
 // Update this file with your site specific information
 const siteData: SiteDataProps = {
         name: "Moritz Kaiser",
-        title: "Moritz Kaiser – Fotograf für Travel, Street, Portrait & Wedding",
+        title: "Moritz Kaiser – Photography",
         description:
-                "Portfolio von Moritz Kaiser – Fotograf aus Baden-Baden. Aufnahmen aus den Bereichen Travel, Street, Portrait und Wedding.",
+                "Portfolio of Moritz Kaiser – Photographer based in Baden-Baden. Portfolio featuring wedding, portrait, street, and travel photography. Explore the work.",
         useViewTransitions: true,
         author: {
                 name: "Moritz Kaiser",
